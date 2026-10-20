@@ -8,10 +8,24 @@
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    <h1 class="title">Carries the flame</h1>
+    <h1 class="title">kirk clicker</h1>
 
-    <div id="main_container" class="container">
-        <input onclick="onKirkButton()" id="kirk_button" type="image" src="https://lifesurge.com/wp-content/uploads/charlie-kirk-memorial-tribute.webp">
+    <div id="mainContainer" class="container has_border">
+        <h id="kirkies" class="statistic title">Kirkies: 0</h>
+
+        <input onclick="onKirkButton()" id="kirkButton" type="image" src="https://lifesurge.com/wp-content/uploads/charlie-kirk-memorial-tribute.webp">
+
+        <div id="upgrades" class="hasBorder">
+            <div class="upgradeOption has_border">
+                <input onclick="onUpgradeButton('kirkFarmer')" type="image" src="https://lifesurge.com/wp-content/uploads/charlie-kirk-memorial-tribute.webp">
+
+                <h id="kirkFarmer" class="title">
+                    Kirk Farmers: 0
+                    <br>
+                    £100
+                </h>
+            </div>
+        </div>
     </div>
 </body>
 </html>

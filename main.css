@@ -1,3 +1,37 @@
+@keyframes buttonEffect {
+    from {
+        width: 10vw;
+        height: 10vh;
+    }
+
+    to {
+        width: 5vw;
+        height: 5vh;
+        margin-left: 40vw;
+        margin-top: 5vh;
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes buttonClicked {
+    0% {
+        width: 10vw;
+        height: 10vh;
+    }
+
+    50% {
+        width: 11vw;
+        height: 20vh;
+        margin-top: 36vh;
+        margin-left: 42vw;
+    }
+
+    100% {
+        width: 10vw;
+        height: 10vh;
+    }
+}
+
 body {
     background-image: url("https://www.advocate.com/media-library/charlie-kirk-dead.jpg?id=61584815");
     background-repeat: no-repeat;
@@ -11,30 +45,86 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.hasBorder {
+    border: 0.1vw;
+    border-radius: 0.5vw;
+    border-color: rgb(100, 100, 100);
+    border-style: dashed;
+}
+
 .container {
     width: 95vw;
     height: 90vh;
     background-color: rgba(0, 0, 0, 0.5);
     display: flex;
-    justify-content: center;
-    align-items: center;
     margin: auto;
     margin-top: 2vh;
-    border: 0.1vw;
-    border-radius: 0.5vw;
-    border-color: rgb(255, 255, 255);
-    border-style: dashed;
 }
 
-#kirk_button {
+.kirkEffect {
+    background-repeat: no-repeat;
+    background-image: url("https://media.cnn.com/api/v1/images/stellar/prod/113912-whoischarliekirkclean.jpg");
+    background-size: contain;
+    width: 10vw;
+    height: 10vh;
+    z-index: -1;
+    animation-name: buttonEffect;
+    animation-duration: 1s;
+    position: absolute;
+    margin-top: 35vh;
+    margin-left: 43vw;
+}
+
+.statistic {
+    position: absolute;
+    font-size: 2vh;
+}
+
+.upgradeOption {
+    width: 23vw;
+    height: 10vh;
+    background-color: rgb(40, 40, 40);
+    margin-left: 1vw;
+    margin-top: 2vh;
+}
+
+.upgradeOption input {
+    margin-left: 0.5vw;
+    margin-top: 0.8vh;
+    width: 4.5vw;
+    height: 8vh;
+}
+
+.upgradeOption h {
+    margin-top: 4vh;
+    margin-left: 5vw;
+    position: absolute;
+}
+
+#kirkies {
+    margin-top: 3vh;
+    margin-left: 2vw;
+}
+
+#kirkButton {
     size: 10vw;
     height: 10vw;
+    margin-top: 35vh;
+    margin-left: 43vw;
+    position: absolute;
 }
 
-.kirk_effect {
-    background-repeat: no-repeat;
-    background-image: url("https://lifesurge.com/wp-content/uploads/charlie-kirk-memorial-tribute.webp");
-    width: 5vw;
-    height: 5vh;
-    z-index: 2;
+#kirkButton:active {
+    animation-name: buttonClicked;
+    animation-duration: 0.25s;
 }
+
+#upgrades {
+    height: 90vh;
+    width: 25vw;
+    position: absolute;
+    background-color: rgb(20, 20, 20);
+    margin-left: 70vw;
+    border-radius: 0.5vw;
+}
+
