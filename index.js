@@ -1,3 +1,6 @@
+let kirkiesHeading
+let mainContainer
+
 let kirkes = 0;
 
 let upgradeOptions = {
@@ -14,10 +17,8 @@ function onKirkButton() {
         effectDiv.remove();
     });
 
-    const mainContainer = document.getElementById("mainContainer")
     mainContainer.appendChild(effectDiv);
 
-    const kirkiesHeading = document.getElementById("kirkies");
     kirkiesHeading.innerHTML = `Kirkies: ${kirkes}`;
 }
 
@@ -37,7 +38,6 @@ function onUpgradeButton(upgradeName) {
                 £${kirkiesPrice}            
             `
 
-            const kirkiesHeading = document.getElementById("kirkies");
             kirkiesHeading.innerHTML = `Kirkies: ${kirkes}`;
         }
     }
@@ -51,13 +51,13 @@ function process() {
 
     }
 
-    const kirkiesHeading = document.getElementById("kirkies");
     kirkiesHeading.innerHTML = `Kirkies: ${kirkes}`;
-
-    setTimeout(process, 1000);
 }
 
 document.addEventListener("DOMContentLoaded", function() {
+    kirkiesHeading = document.getElementById("kirkies");
+    mainContainer = document.getElementById("mainContainer")
+
     for (let [key, value] of Object.entries(upgradeOptions)) {
         let {name, amount, kirkiesPrice} = value;
 
@@ -70,5 +70,5 @@ document.addEventListener("DOMContentLoaded", function() {
         `
     }
 
-    //process();
+    setInterval(process, 1000);
 });
