@@ -57,10 +57,10 @@ function onUpgradeButton(upgradeKey) {
     if (kirkes >= kirkiesPrice) {
         kirkes -= kirkiesPrice;
         upgradeOptions[upgradeKey].amount ++;
-    }
 
-    updateUpgradeOption(upgradeKey);
-    addMiner(upgradeKey);   
+        updateUpgradeOption(upgradeKey);
+        addMiner(upgradeKey);   
+    }
 }
 
 function process() {
