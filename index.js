@@ -1,7 +1,7 @@
 let kirkiesHeading
 let body
 
-let kirkes = 10000;
+let kirkes = 0;
 
 let upgradeOptions = {
     kirkFarmer: {name: "Kirk", amount: 0, kirkiesPrice: 10, kirkiesPerSecond: 1, minerDeployed: false, minerIconUrl: "https://lifesurge.com/wp-content/uploads/charlie-kirk-memorial-tribute.webp"},
