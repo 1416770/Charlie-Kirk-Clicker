@@ -1,0 +1,40 @@
+body {
+    background-image: url("https://www.advocate.com/media-library/charlie-kirk-dead.jpg?id=61584815");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.title {
+    color: white;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    width: 95vw;
+    height: 90vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 2vh;
+    border: 0.1vw;
+    border-radius: 0.5vw;
+    border-color: rgb(255, 255, 255);
+    border-style: dashed;
+}
+
+#kirk_button {
+    size: 10vw;
+    height: 10vw;
+}
+
+.kirk_effect {
+    background-repeat: no-repeat;
+    background-image: url("https://lifesurge.com/wp-content/uploads/charlie-kirk-memorial-tribute.webp");
+    width: 5vw;
+    height: 5vh;
+    z-index: 2;
+}
