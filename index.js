@@ -4,11 +4,11 @@ let body
 let kirkes = 0;
 
 let upgradeOptions = {
-    kirkFarmer: {name: "Kirk Farmer", amount: 0, kirkiesPrice: 10, kirkiesPerSecond: 1},
-    elon: {name: "Elon", amount: 0, kirkiesPrice: 100, kirkiesPerSecond: 10},
-    trump: {name: "Trumpy", amount: 0, kirkiesPrice: 300, kirkiesPerSecond: 30},
-    drHouse: {name: "HOUSE", amount: 0, kirkiesPrice: 500, kirkiesPerSecond: 50},
-    drForeman: {name: "Dr Foreskin", amount: 0, kirkiesPrice: 1000, kirkiesPerSecond: 100},
+    kirkFarmer: {name: "Kirk", amount: 0, kirkiesPrice: 10, kirkiesPerSecond: 1},
+    elon: {name: "Elon", amount: 0, kirkiesPrice: 500, kirkiesPerSecond: 100},
+    trump: {name: "Trump", amount: 0, kirkiesPrice: 1000, kirkiesPerSecond: 500},
+    drHouse: {name: "Dr House", amount: 0, kirkiesPrice: 5000, kirkiesPerSecond: 1000},
+    drForeman: {name: "Dr Foreskin", amount: 0, kirkiesPrice: 10000, kirkiesPerSecond: 5000},
 }
 
 function updateUpgradeOption(upgradeKey) {
