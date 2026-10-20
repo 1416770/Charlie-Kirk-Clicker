@@ -32,6 +32,12 @@
     }
 }
 
+@keyframes minerSpin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
 body {
     background-image: url("https://www.advocate.com/media-library/charlie-kirk-dead.jpg?id=61584815");
     background-repeat: no-repeat;
@@ -98,6 +104,17 @@ body {
     margin-top: 1vh;
     margin-left: 5vw;
     position: absolute;
+}
+
+.miner {
+    width: 5vw;
+    height: 5vh;
+    position: absolute;
+    margin-top: 35vh;
+    margin-left: 35vw;
+    animation-name: minerSpin;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
 }
 
 #mainTitle {
