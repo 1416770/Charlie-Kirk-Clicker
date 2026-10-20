@@ -4,7 +4,11 @@ let body
 let kirkes = 0;
 
 let upgradeOptions = {
-    kirkFarmer: {name: "Kirk Farmers", amount: 0, kirkiesPrice: 20, kirkiesPerSecond: 1}
+    kirkFarmer: {name: "Kirk Farmer", amount: 0, kirkiesPrice: 10, kirkiesPerSecond: 1},
+    elon: {name: "Elon", amount: 0, kirkiesPrice: 100, kirkiesPerSecond: 10},
+    trump: {name: "Trumpy", amount: 0, kirkiesPrice: 300, kirkiesPerSecond: 30},
+    drHouse: {name: "HOUSE", amount: 0, kirkiesPrice: 500, kirkiesPerSecond: 50},
+    drForeman: {name: "Dr Foreskin", amount: 0, kirkiesPrice: 1000, kirkiesPerSecond: 100},
 }
 
 function updateUpgradeOption(upgradeKey) {
@@ -30,7 +34,7 @@ function onKirkButton() {
     effectDiv.className = "kirkEffect";
     effectDiv.addEventListener("animationend", effectDiv.remove);
     body.appendChild(effectDiv);
-    
+
     kirkiesHeading.innerHTML = `Kirkies: ${kirkes}`;
 }
 
