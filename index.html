@@ -7,25 +7,16 @@
     <script src="index.js"></script>
     <link rel="stylesheet" href="index.css">
 </head>
-<body>
-    <h1 class="title">Kirk Clicker 1.0</h1>
+<body id="body">
+    <h1 id="mainTitle" class="title title2 hasBorder">Kirk Clicker 1.1</h1>
+    <h id="kirkies" class="title title2 hasBorder">Kirkies: 0</h>
 
-    <div id="mainContainer" class="container has_border">
-        <h id="kirkies" class="statistic title">Kirkies: 0</h>
+    <input onclick="onKirkButton()" id="kirkButton" type="image" src="https://lifesurge.com/wp-content/uploads/charlie-kirk-memorial-tribute.webp">
 
-        <input onclick="onKirkButton()" id="kirkButton" type="image" src="https://lifesurge.com/wp-content/uploads/charlie-kirk-memorial-tribute.webp">
-
-        <div id="upgrades" class="hasBorder">
-            <div class="upgradeOption has_border">
-                <input onclick="onUpgradeButton('kirkFarmer')" type="image" src="https://lifesurge.com/wp-content/uploads/charlie-kirk-memorial-tribute.webp">
-
-                <h id="kirkFarmer" class="title">
-                    Kirk Farmers: 0
-                    <br>
-                    £100
-                </h>
-                
-            </div>
+    <div id="upgrades" class="hasBorder">
+        <div class="upgradeOption hasBorder">
+            <input onclick="onUpgradeButton('kirkFarmer')" type="image" src="https://lifesurge.com/wp-content/uploads/charlie-kirk-memorial-tribute.webp">
+            <h id="kirkFarmer" class="title"></h>
         </div>
     </div>
 </body>
